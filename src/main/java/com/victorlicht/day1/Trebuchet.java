@@ -89,21 +89,28 @@ public class Trebuchet {
             while (reader.hasNextLine()) {
                 final String ONE = "one", TWO = "two", THREE = "three", FOUR = "four", FIVE = "five", SIX = "six", SEVEN = "seven",
                         EIGHT = "eight", NINE = "nine";
+
                 int oneIndex = -1, twoIndex = -1, threeIndex = -1, fourIndex = -1, fiveIndex = -1, sixIndex = -1,
                         sevenIndex = -1, eightIndex = -1, nineIndex = -1;
+
                 int oneLastIndex = -1, twoLastIndex = -1, threeLastIndex = -1, fourLastIndex = -1, fiveLastIndex = -1, sixLastIndex = -1,
                         sevenLastIndex = -1, eightLastIndex = -1, nineLastIndex = -1;
-                int maxWordIndex = 0;
-                int minWordIndex = 0;
-                int realLeftNumber = 0;
-                int realRightNumber = 0;
-                int[] indexArray = new int[0];
-                int[] indexArrayLast = new int[0];
+
+                int maxWordIndex;
+                int minWordIndex;
+                int realLeftNumber;
+                int realRightNumber;
+                int[] indexArray;
+                int[] indexArrayLast;
 
                 String line = reader.nextLine();
-                int len = line.length(), leftNumber = Integer.MIN_VALUE, rightNumber = Integer.MAX_VALUE, indexL = 0, indexR = 0;
-                int countL = 0;
-                int countR = 0;
+                int len = line.length(),
+                        leftNumber = Integer.MIN_VALUE,
+                        rightNumber = Integer.MAX_VALUE,
+                        indexL = 0,
+                        indexR = 0,
+                        countR = 0,
+                        countL = 0;
 
                 if (line.contains(ONE)) {
                     oneIndex = line.indexOf(ONE);
