@@ -83,7 +83,7 @@ public class Trebuchet {
     public void partTwo() {
         try {
 
-            File file = new File("/home/vic/Desktop/Java/advent_of_code2023/src/main/java/com/victorlicht/day1/data_file");
+            File file = new File("src/main/java/com/victorlicht/day1/data_file");
             Scanner reader = new Scanner(file);
             int num, sum = 0;
             while (reader.hasNextLine()) {
